@@ -131,8 +131,36 @@
         {
             "id": "3",
             "categroy": "containers",
+            "title": "mapped ports of a conatiner",
+            "code": "docker post <container-name> ",
+            "description": "List network "
+        },
+        {
+            "id": "3",
+            "categroy": "containers",
             "title": "rename a container",
             "code": "docker rename OLD_NAME  NEW_NAME",
+            "description": "List network "
+        },
+        {
+            "id": "3",
+            "categroy": "containers",
+            "title": "state of runnig containers",
+            "code": "docker stats",
+            "description": "List network "
+        },
+        {
+            "id": "3",
+            "categroy": "containers",
+            "title": "show docker version",
+            "code": "docker version",
+            "description": "List network "
+        },
+        {
+            "id": "3",
+            "categroy": "containers",
+            "title": "show modified files in a container",
+            "code": "docker diff <container-name>",
             "description": "List network "
         }
     ]
