@@ -1,25 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
+import { Container } from 'react-bootstrap';
+import k8data from "../src/data/K8Data.json"
+import dockerData from "../src/data/dockerData.json"
+import K8sPage from './pages/K8Page';
+import DockerPage from './pages/DockerPage';
 import './App.css';
-
+import { Routes, Route } from "react-router-dom"
+import Navbar from './components/Navbar';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+    <>
+      <div className="App">
+        <Navbar />
+        <Container className='bg-default text-center' id='app'>
+          <Routes>
+
+            <Route path='/' element={<K8sPage data={k8data} />}> </Route>
+            <Route path='/k8' element={<K8sPage data={k8data} />}> </Route>
+            <Route path='/docker' element={<DockerPage data={dockerData} />}> </Route>
+          </Routes>
+        </Container>
+      </div>
+    </>
   );
 }
 
