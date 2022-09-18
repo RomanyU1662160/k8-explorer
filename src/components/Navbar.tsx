@@ -13,7 +13,7 @@ const Navbar = (): ReactElement => {
                 <NavbarBs.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
                         <Nav.Link to={"/docker"} as={NavLink} className="text-info"> Docker </Nav.Link>
-                        <Nav.Link to={"/k8"} as={NavLink} className="text-info"> Kuberenets</Nav.Link>
+                        <Nav.Link to={"/k8"} as={NavLink} className="text-info"> Kubernetes</Nav.Link>
                         <Nav.Link to={"/js"} as={NavLink} className="text-info"> Js code snippets</Nav.Link>
                     </Nav>
                 </NavbarBs.Collapse>
