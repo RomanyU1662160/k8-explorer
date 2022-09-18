@@ -1,5 +1,6 @@
-import DropDown from "../components/DropDown"
+// https://websitesetup.org/javascript-cheat-sheet/
 
+import DropDown from "../components/DropDown"
 
 
 export type DataItem = {
@@ -11,24 +12,20 @@ export type DataItem = {
     "description": string
 }
 
-export type DockerData = {
-    images: Array<DataItem>,
-}
-
 
 
 export type DockerDropDownProps = {
-    data: DockerData
+    data: any
 }
 
 
 
-const DcokerPage = ({ data }: DockerDropDownProps) => {
+const JSCodePage = ({ data }: DockerDropDownProps) => {
 
     return (<>
-        <h3 className="text-info text-center"> Docker Commands</h3>
+        <h3 className="text-info text-center"> Js code snippets</h3>
         <DropDown data={data}></DropDown>
     </>);
 }
 
-export default DcokerPage;
+export default JSCodePage; 

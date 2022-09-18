@@ -2,49 +2,49 @@
     "images": [
         {
             "id": "1",
-            "categroy": "images",
+            "category": "images",
             "title": "get all images",
             "code": "docker image ls",
             "description": "List all the images"
         },
         {
             "id": "2",
-            "categroy": "images",
+            "category": "images",
             "title": "delete an image",
             "code": "docker image rm <image name>",
             "description": "docker image rm <image name>"
         },
         {
             "id": "3",
-            "categroy": "images",
+            "category": "images",
             "title": "build an image",
             "code": "docker build -t<image-tag> <image-name>",
             "description": "docker build -t<image-tag> <image-name> "
         },
         {
             "id": "4",
-            "categroy": "images",
+            "category": "images",
             "title": "pull an image",
             "code": "docker pull <image-name>",
             "description": "docker pull <image-name> "
         },
         {
             "id": "4",
-            "categroy": "images",
+            "category": "images",
             "title": "run an image in container",
             "code": "docker run <image-name>",
             "description": "docker run <image-name> "
         },
         {
             "id": "5",
-            "categroy": "images",
+            "category": "images",
             "title": "push to registery",
             "code": "docker push myrepo/myimage:2.0",
             "description": "Push an image to a registry"
         },
         {
             "id": "5",
-            "categroy": "images",
+            "category": "images",
             "title": "delete all not-running images",
             "code": "docker system prune -a",
             "description": "Push an image to a registry"
@@ -53,112 +53,112 @@
     "container": [
         {
             "id": "1",
-            "categroy": "containers",
+            "category": "containers",
             "title": "list running container",
             "code": "docker ps",
             "description": "docker ps"
         },
         {
             "id": "2",
-            "categroy": "containers",
+            "category": "containers",
             "title": "list all container",
             "code": "docker ps -a",
             "description": "docker ps"
         },
         {
             "id": "1",
-            "categroy": "containers",
+            "category": "containers",
             "title": "run a container",
             "code": "docker  run --name <container-name> -p 5000:80 <image-name> ",
             "description": "Push an image to a registry"
         },
         {
             "id": "2",
-            "categroy": "containers",
+            "category": "containers",
             "title": "stop a running container",
             "code": "docker stop <container-name>",
             "description": "stop a running container "
         },
         {
             "id": "3",
-            "categroy": "containers",
+            "category": "containers",
             "title": "delete a container",
             "code": "docker rm <container-name>",
             "description": "List network "
         },
         {
             "id": "4",
-            "categroy": "containers",
+            "category": "containers",
             "title": "Delete all running and stopped containers ",
             "code": "docker container rm -f $(docker ps -aq)",
             "description": "Delete all running and stopped containers  "
         },
         {
             "id": "4",
-            "categroy": "containers",
+            "category": "containers",
             "title": "view logs",
             "code": "docker logs --tail 100 <container-name>",
             "description": "Print the last 100  lines of a container’s logs  "
         },
         {
             "id": "4",
-            "categroy": "containers",
+            "category": "containers",
             "title": "delete stopped conatiners",
             "code": "docker conatiner prune",
             "description": "delete stopped conatiner"
         },
         {
             "id": "4",
-            "categroy": "containers",
+            "category": "containers",
             "title": "start shell in a container",
             "code": "docker exec -it <container-name>",
             "description": "delete stopped conatiner"
         },
         {
             "id": "4",
-            "categroy": "containers",
+            "category": "containers",
             "title": "Create an image of container",
             "code": "docker commit <container-name>",
             "description": "delete stopped conatiner"
         },
         {
             "id": "3",
-            "categroy": "containers",
+            "category": "containers",
             "title": "List network",
             "code": "docker network ls ",
             "description": "List network "
         },
         {
             "id": "3",
-            "categroy": "containers",
+            "category": "containers",
             "title": "mapped ports of a conatiner",
             "code": "docker post <container-name> ",
             "description": "List network "
         },
         {
             "id": "3",
-            "categroy": "containers",
+            "category": "containers",
             "title": "rename a container",
             "code": "docker rename OLD_NAME  NEW_NAME",
             "description": "List network "
         },
         {
             "id": "3",
-            "categroy": "containers",
+            "category": "containers",
             "title": "state of runnig containers",
             "code": "docker stats",
             "description": "List network "
         },
         {
             "id": "3",
-            "categroy": "containers",
+            "category": "containers",
             "title": "show docker version",
             "code": "docker version",
             "description": "List network "
         },
         {
             "id": "3",
-            "categroy": "containers",
+            "category": "containers",
             "title": "show modified files in a container",
             "code": "docker diff <container-name>",
             "description": "List network "

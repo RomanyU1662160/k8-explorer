@@ -2,7 +2,7 @@ import DropDown from "../components/DropDown"
 
 export type DataItem = {
     "id": string,
-    "categroy": string,
+    "category": string,
     "title": string,
     "code": string,
     "shortcut"?: string,

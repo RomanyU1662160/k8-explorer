@@ -12,22 +12,22 @@ const DropDown = ({ data }: DropDownProps): ReactElement => {
     const [categories, setCategories] = useState<Array<string>>(Object.keys(data))
     const [selectedCategory, setSelectedCategory] = useState<string>()
     const [selectedOption, setSelectedOption] = useState<DataItem>()
-    const [avilableOptions, setAvilableOptions] = useState<Array<DataItem>>([])
+    const [availableOptions, setAvailableOptions] = useState<Array<DataItem>>([])
     const [command, setCommand] = useState<string>()
 
     useEffect(() => {
 
-    }, [categories, avilableOptions, command])
+    }, [categories, availableOptions, command])
 
-    if (avilableOptions) {
-        console.log("avilable options", avilableOptions)
+    if (availableOptions) {
+        console.log("available options", availableOptions)
     }
 
     const handleSelectedCategory = (value: string) => {
         setSelectedOption(undefined)
         setCommand(undefined)
         setSelectedCategory(value)
-        setAvilableOptions(data[value as keyof Data])
+        setAvailableOptions(data[value as keyof Data])
     }
     const handleSelectedOption = (option: DataItem) => {
         setSelectedOption(option)
@@ -59,12 +59,12 @@ const DropDown = ({ data }: DropDownProps): ReactElement => {
                 </div>
 
 
-                {avilableOptions.length >= 1 && <div className=" dropdown w-100  mt-3 ">
+                {availableOptions.length >= 1 && <div className=" dropdown w-100  mt-3 ">
                     <button className="btn btn-lg btn-dark text-info dropdown-toggle w-100 " type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
                         {selectedOption ? selectedOption.title : " Please Select"}
                     </button>
                     <ul className="dropdown-menu dropdown-menu-dark " aria-labelledby="dropdownMenuButton2">
-                        {avilableOptions.map((option, index) => {
+                        {availableOptions.map((option, index) => {
                             return (
                                 <>
                                     <li key={index} className='p-2 border-bottom text-info' style={{ cursor: "pointer" }} value={option.title} onClick={() => { handleSelectedOption(option) }} >{option.title}</li>

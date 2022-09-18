@@ -2,15 +2,15 @@
     "pods": [
         {
             "id": "1",
-            "categroy": "pods",
+            "category": "pods",
             "title": "get all pods",
-            "code": "kubectel get pods",
+            "code": "kubectl get pods",
             "shortcut": "kgb",
             "description": "List all pods in the namespace"
         },
         {
             "id": "1",
-            "categroy": "pods",
+            "category": "pods",
             "title": "all pods-more details",
             "code": "kkubectl get pods -o wide ",
             "shortcut": "kgb",
@@ -18,7 +18,7 @@
         },
         {
             "id": "1",
-            "categroy": "pods",
+            "category": "pods",
             "title": "get a pod's YAML",
             "code": "kubectl get pod my-pod -o yaml",
             "shortcut": "kgb",
@@ -28,15 +28,15 @@
     "services": [
         {
             "id": "1",
-            "categroy": "services",
+            "category": "services",
             "title": "get all services",
-            "code": "kubectel get services",
+            "code": "kubectl get services",
             "shortcut": "kgs",
             "description": "List all services in the namespace"
         },
         {
             "id": "2",
-            "categroy": "services",
+            "category": "services",
             "title": "Services in all namespaces",
             "code": "kubectl get pods --all-namespaces ",
             "shortcut": "kgs",
@@ -46,15 +46,15 @@
     "deployments": [
         {
             "id": "1",
-            "categroy": "deployments",
+            "category": "deployments",
             "title": "get all deployments",
-            "code": "kubectel get deployments",
+            "code": "kubectl get deployments",
             "shortcut": "kgd",
             "description": ""
         },
         {
             "id": "2",
-            "categroy": "deployments",
+            "category": "deployments",
             "title": "get a particular deployment",
             "code": "create deployment nginx --image=nginx",
             "shortcut": "kgd",
@@ -62,7 +62,7 @@
         },
         {
             "id": "3",
-            "categroy": "deployments",
+            "category": "deployments",
             "title": "create deployment nginx",
             "code": "create deployment nginx --image=nginx",
             "shortcut": "kgd",
@@ -72,7 +72,7 @@
     "apply resource": [
         {
             "id": "1",
-            "categroy": "apply resource",
+            "category": "apply resource",
             "title": "create resource(s)",
             "code": "kubectl apply -f ./filename.yaml ",
             "shortcut": "kgd",
@@ -80,7 +80,7 @@
         },
         {
             "id": "2",
-            "categroy": "apply resource",
+            "category": "apply resource",
             "title": "create from multiple files",
             "code": "kubectl apply -f ./my1.yaml -f ./my2.yaml ",
             "shortcut": "kgd",
@@ -88,7 +88,7 @@
         },
         {
             "id": "2",
-            "categroy": "apply resource",
+            "category": "apply resource",
             "title": "create all resource(s) from a dir",
             "code": "kubectl apply -f ./dir",
             "shortcut": "kgd",
