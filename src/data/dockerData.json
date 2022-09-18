@@ -32,7 +32,7 @@
             "id": "4",
             "categroy": "images",
             "title": "run an image in container",
-            "code": "docker pull <image-name>",
+            "code": "docker run <image-name>",
             "description": "docker run <image-name> "
         },
         {
@@ -55,7 +55,7 @@
             "id": "1",
             "categroy": "containers",
             "title": "list running container",
-            "code": "ddocker ps",
+            "code": "docker ps",
             "description": "docker ps"
         },
         {
