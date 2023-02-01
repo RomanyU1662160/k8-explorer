@@ -65,6 +65,7 @@
             "code": "docker ps -a",
             "description": "docker ps"
         },
+        
         {
             "id": "1",
             "category": "containers",
@@ -73,11 +74,25 @@
             "description": "Push an image to a registry"
         },
         {
-            "id": "2",
+            "id": "3",
             "category": "containers",
             "title": "stop a running container",
             "code": "docker stop <container-name>",
             "description": "stop a running container "
+        },   
+        {
+            "id": "6",
+            "category": "containers",
+            "title": "stop all running containers",
+            "code": "docker stop $(ps -a -q)",
+            "description": "stop all running containers"
+        },
+        {
+            "id": "8",
+            "category": "containers",
+            "title": "remove all running containers",
+            "code": "docker rm $(ps -a -q)",
+            "description": "stop all running containers"
         },
         {
             "id": "3",
