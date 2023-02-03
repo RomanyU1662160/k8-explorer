@@ -84,14 +84,14 @@
             "id": "6",
             "category": "containers",
             "title": "stop all running containers",
-            "code": "docker stop $(ps -a -q)",
+            "code": "docker stop $(docker ps -a -q)",
             "description": "stop all running containers"
         },
         {
             "id": "8",
             "category": "containers",
             "title": "remove all running containers",
-            "code": "docker rm $(ps -a -q)",
+            "code": "docker rm $(docker ps -a -q)",
             "description": "stop all running containers"
         },
         {
