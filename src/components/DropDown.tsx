@@ -135,9 +135,9 @@ const DropDown = ({ data }: DropDownProps): ReactElement => {
           ) : null}
 
           {command ? (
-            <div className='col-md-7 border'>
+            <div className='col-md-7 border '>
               <p
-                className='text-warning slide-in-right '
+                className='text-warning slide-in-right'
                 id='command'
                 style={{
                   transition: '3000ms all ease',
