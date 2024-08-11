@@ -1,7 +1,7 @@
 import { Container } from 'react-bootstrap';
 import k8data from '../src/data/K8Data.json';
 import dockerData from '../src/data/dockerData.json';
-import JsData from '../src/data/JSData.json';
+import { JsData } from './data/JSData';
 
 import K8sPage from './pages/K8Page';
 import DockerPage from './pages/DockerPage';

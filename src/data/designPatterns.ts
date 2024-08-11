@@ -1,6 +1,6 @@
-import { facadePatternCode } from '../design-patterns-code/facade';
-import { observerPatternCode } from '../design-patterns-code/observer';
-import { SingletonPatternCode } from '../design-patterns-code/singleton';
+import { facadePatternCode } from '../code/design-patterns-code/facade';
+import { observerPatternCode } from '../code/design-patterns-code/observer';
+import { SingletonPatternCode } from '../code/design-patterns-code/singleton';
 
 export const designPatterns = {
   Behavioral: [
