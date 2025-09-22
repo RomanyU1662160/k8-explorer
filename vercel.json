@@ -1,5 +1,10 @@
 {
   "buildCommand": "pnpm run build",
   "outputDirectory": "build",
-  "installCommand": "pnpm install"
+  "installCommand": "pnpm install",
+  "functions": {
+    "app/api/**/*.js": {
+      "runtime": "nodejs22.x"
+    }
+  }
 }
