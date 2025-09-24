@@ -1,5 +1,5 @@
 import { Container } from 'react-bootstrap';
-import k8data from '../src/data/K8Data.json';
+import { K8Data } from './data/K8Data';
 import dockerData from '../src/data/dockerData.json';
 import { JsData } from './data/JSData';
 
@@ -19,8 +19,8 @@ function App() {
       <Navbar />
       <Container className='bg-default text-center' id='app'>
         <Routes>
-          <Route path='/' element={<K8sPage data={k8data} />}></Route>
-          <Route path='/k8' element={<K8sPage data={k8data} />}></Route>
+          <Route path='/' element={<K8sPage data={K8Data} />}></Route>
+          <Route path='/k8' element={<K8sPage data={K8Data} />}></Route>
           <Route
             path='/docker'
             element={<DockerPage data={dockerData} />}
