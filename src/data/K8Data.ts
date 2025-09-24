@@ -1,14 +1,4 @@
 export const K8Data = {
-  'Kubernetes Concepts': [
-    {
-      id: '1',
-      category: 'Kubernetes Concepts',
-      title: 'Cluster Diagram',
-      code: 'kubectl apply -f ./filename.yaml ',
-      shortcut: 'kgd',
-      description: '',
-    },
-  ],
   pods: [
     {
       id: '1',
