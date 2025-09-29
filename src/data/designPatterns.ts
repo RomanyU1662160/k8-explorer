@@ -1,6 +1,7 @@
 import { facadePatternCode } from '../code/design-patterns-code/facade';
 import { observerPatternCode } from '../code/design-patterns-code/observer';
 import { SingletonPatternCode } from '../code/design-patterns-code/singleton';
+import { dependencyInjectionCode } from '../code/design-patterns-code/DI';
 
 export const designPatterns = {
   Behavioral: [
@@ -22,10 +23,18 @@ export const designPatterns = {
       description:
         'The Singleton Pattern ensures that a class has only one single instance. This is useful when we want to control the number of the class instances,  to regulate access to a shared resource, such as a database, logging or file.',
     },
+    {
+      id: '3',
+      category: 'Creational Patterns',
+      title: 'Dependency Injection Pattern',
+      code: dependencyInjectionCode,
+      description:
+        'The Dependency Injection Pattern is a design pattern that allows us to inject the dependencies of a class into it.',
+    },
   ],
   Structural: [
     {
-      id: '3',
+      id: '4',
       category: 'Structural Patterns',
       title: 'Facade Pattern',
       code: facadePatternCode,
